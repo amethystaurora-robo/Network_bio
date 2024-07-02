@@ -1,0 +1,186 @@
+,regulatory,KO,Description,Functional_Hier_A,Functional_Hier_B,Functional_Hier_C
+0,Dapma7bEVm024648,K04374,"ATF4, CREB2; cyclic AMP-dependent transcription factor ATF-4",Eukaryotic type,Basic leucine zipper (bZIP),"AP-1(-like) components, CRE-BP/ATF"
+1,Dapma7bEVm024617,K09028,JUNB; transcription factor jun-B,Eukaryotic type,Basic leucine zipper (bZIP),"AP-1(-like) components, Jun"
+2,Dapma7bEVm006506,K09035,"CMAF, MAF; transcription factor Maf",Eukaryotic type,Basic leucine zipper (bZIP),"AP-1(-like) components, Maf"
+3,Dapma7bEVm008004,K09382,PAX1_9; paired box protein 1/9,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+4,Dapma7bEVm028665,K08031,PAX6; paired box protein 6,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+5,Dapma7bEVm007606,K08031,PAX6; paired box protein 6,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+6,Dapma7bEVm011721,K08031,PAX6; paired box protein 6,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+7,Dapma7bEVm014963,K09173,RFX1_2_3; regulatory factor X 1/2/3,Eukaryotic type,Other basic domains,RF-X
+8,Dapma7bEVm019356,K09448,TEAD; transcriptional enhancer factor,Eukaryotic type,Helix-turn-helix,TEA domain
+9,Dapma7bEVm029336,K09448,TEAD; transcriptional enhancer factor,Eukaryotic type,Helix-turn-helix,TEA domain
+10,Dapma7bEVm028464,K23195,"CTCF, CTCFL; transcriptional repressor CTCF",Eukaryotic type,Zinc finger,Cys2His2 others
+11,Dapma7bEVm010230,K23195,"CTCF, CTCFL; transcriptional repressor CTCF",Eukaryotic type,Zinc finger,Cys2His2 others
+12,Dapma7bEVm018471,K04491,TCF7L2; transcription factor 7-like 2,Eukaryotic type,beta-Scaffold factors with minor groove contacts,HMG TCF-1
+13,Dapma7bEVm023705,K24889,IRX; iroquois-class homeodomain protein IRX,Eukaryotic type,Helix-turn-helix,Homeo domain TALE
+14,Dapma7bEVm009954,K24889,IRX; iroquois-class homeodomain protein IRX,Eukaryotic type,Helix-turn-helix,Homeo domain TALE
+15,Dapma7bEVm029547,K11224,STAT5B; signal transducer and activator of transcription 5B,Eukaryotic type,beta-Scaffold factors with minor groove contacts,STAT
+16,Dapma7bEVm027400,K11224,STAT5B; signal transducer and activator of transcription 5B,Eukaryotic type,beta-Scaffold factors with minor groove contacts,STAT
+17,Dapma7bEVm000083,K11224,STAT5B; signal transducer and activator of transcription 5B,Eukaryotic type,beta-Scaffold factors with minor groove contacts,STAT
+18,Dapma7bEVm013342,K24637,ZBED1; zinc finger BED domain-containing protein 1 (E3 SUMO-protein ligase ZBED1) [EC:2.3.2.-],Eukaryotic type,Zinc finger,Cys2His2 BED
+19,Dapma7bEVm024524,K24637,ZBED1; zinc finger BED domain-containing protein 1 (E3 SUMO-protein ligase ZBED1) [EC:2.3.2.-],Eukaryotic type,Zinc finger,Cys2His2 BED
+20,Dapma7bEVm015962,K24637,ZBED1; zinc finger BED domain-containing protein 1 (E3 SUMO-protein ligase ZBED1) [EC:2.3.2.-],Eukaryotic type,Zinc finger,Cys2His2 BED
+21,Dapma7bEVm028155,K24637,ZBED1; zinc finger BED domain-containing protein 1 (E3 SUMO-protein ligase ZBED1) [EC:2.3.2.-],Eukaryotic type,Zinc finger,Cys2His2 BED
+22,Dapma7bEVm006717,K08705,"NR5A3, ftz-f1; nuclear receptor subfamily 5 group A member 3",Eukaryotic type,Zinc finger,Cys4 Fushi tarazu-F1-like
+23,Dapma7bEVm023193,K08544,"NR2C2, TR4; testicular receptor 4",Eukaryotic type,Zinc finger,Cys4 hepatocyte nuclear factor 4-like
+24,Dapma7bEVm000404,K08544,"NR2C2, TR4; testicular receptor 4",Eukaryotic type,Zinc finger,Cys4 hepatocyte nuclear factor 4-like
+25,Dapma7bEVm028193,K09067,ASCL; achaete-scute complex protein,Eukaryotic type,Basic helix-loop-helix (bHLH),Achaete-Scute
+26,Dapma7bEVm008019,K09067,ASCL; achaete-scute complex protein,Eukaryotic type,Basic helix-loop-helix (bHLH),Achaete-Scute
+27,Dapma7bEVm021067,K09090,"HESN; hairy and enhancer of split, invertebrate",Eukaryotic type,Basic helix-loop-helix (bHLH),"Hairy, Hairy/E(SPL)"
+28,Dapma7bEVm019730,K09090,"HESN; hairy and enhancer of split, invertebrate",Eukaryotic type,Basic helix-loop-helix (bHLH),"Hairy, Hairy/E(SPL)"
+29,Dapma7bEVm017948,K09090,"HESN; hairy and enhancer of split, invertebrate",Eukaryotic type,Basic helix-loop-helix (bHLH),"Hairy, Hairy/E(SPL)"
+30,Dapma7bEVm004911,K09090,"HESN; hairy and enhancer of split, invertebrate",Eukaryotic type,Basic helix-loop-helix (bHLH),"Hairy, Hairy/E(SPL)"
+31,Dapma7bEVm011370,K09090,"HESN; hairy and enhancer of split, invertebrate",Eukaryotic type,Basic helix-loop-helix (bHLH),"Hairy, Hairy/E(SPL)"
+32,Dapma7bEVm019624,K16672,HTH; homeobox protein homothorax,Eukaryotic type,Helix-turn-helix,Homeo domain TALE
+33,Dapma7bEVm010065,K16672,HTH; homeobox protein homothorax,Eukaryotic type,Helix-turn-helix,Homeo domain TALE
+34,Dapma7bEVm028433,K16672,HTH; homeobox protein homothorax,Eukaryotic type,Helix-turn-helix,Homeo domain TALE
+35,Dapma7bEVm017833,K02678,"ETS1, pnt; C-ets-1",Eukaryotic type,Helix-turn-helix,Tryptophan clusters Ets-type
+36,Dapma7bEVm020993,K17696,"EMC; DNA-binding protein inhibitor ID, other",Eukaryotic type,Basic helix-loop-helix (bHLH),HLH domain only
+37,Dapma7bEVm017883,K09381,PAX3_7; paired box protein 3/7,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+38,Dapma7bEVm005118,K09381,PAX3_7; paired box protein 3/7,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+39,Dapma7bEVm019215,K09381,PAX3_7; paired box protein 3/7,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+40,Dapma7bEVm010730,K09381,PAX3_7; paired box protein 3/7,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+41,Dapma7bEVm006346,K09381,PAX3_7; paired box protein 3/7,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+42,Dapma7bEVm020331,K09057,HLF; hepatic leukemia factor,Eukaryotic type,Basic leucine zipper (bZIP),bZIP/PAR
+43,Dapma7bEVm000571,K09057,HLF; hepatic leukemia factor,Eukaryotic type,Basic leucine zipper (bZIP),bZIP/PAR
+44,Dapma7bEVm002677,K09414,HSF1; heat shock transcription factor 1,Eukaryotic type,Helix-turn-helix,Heat shock factors
+45,Dapma7bEVm006802,K14034,"NR1H1, EcR; ecdysone receptor",Eukaryotic type,Zinc finger,Cys4 thyroid hormone receptor-like
+46,Dapma7bEVm015282,K14034,"NR1H1, EcR; ecdysone receptor",Eukaryotic type,Zinc finger,Cys4 thyroid hormone receptor-like
+47,Dapma7bEVm017864,K10180,TBX6; T-box protein 6,Eukaryotic type,Other transcription factors,T-box
+48,Dapma7bEVm016850,K09231,KR; krueppel,Eukaryotic type,Zinc finger,Cys2His2 others
+49,Dapma7bEVm018922,K09364,"POU2F, OTF; POU domain transcription factor, class 2",Eukaryotic type,Helix-turn-helix,Homeo domain POU
+50,Dapma7bEVm017875,K09355,PBX1; pre-B-cell leukemia transcription factor 1,Eukaryotic type,Helix-turn-helix,Homeo domain TALE
+51,Dapma7bEVm004297,K09355,PBX1; pre-B-cell leukemia transcription factor 1,Eukaryotic type,Helix-turn-helix,Homeo domain TALE
+52,Dapma7bEVm017865,K25856,ARID3; AT-rich interactive domain-containing protein 3,Eukaryotic type,Helix-turn-helix,ARID
+53,Dapma7bEVm017238,K08035,"FOXA2, HNF3B; forkhead box protein A2, hepatocyte nuclear factor 3-beta",Eukaryotic type,Helix-turn-helix,Fork head/winged helix developmental regulators
+54,Dapma7bEVm016612,K22536,"DAN, DANR; distal antenna",Eukaryotic type,Helix-turn-helix,Homeo domain other
+55,Dapma7bEVm017834,K15603,TCF4_12; transcription factor 4/12,Eukaryotic type,Basic helix-loop-helix (bHLH),Ubiquitous (class A) factors
+56,Dapma7bEVm001673,K15603,TCF4_12; transcription factor 4/12,Eukaryotic type,Basic helix-loop-helix (bHLH),Ubiquitous (class A) factors
+57,Dapma7bEVm017216,K09385,FOXG; forkhead box protein G,Eukaryotic type,Helix-turn-helix,Fork head/winged helix developmental regulators
+58,Dapma7bEVm011988,K09385,FOXG; forkhead box protein G,Eukaryotic type,Helix-turn-helix,Fork head/winged helix developmental regulators
+59,Dapma7bEVm017842,K16796,SOX2; transcription factor SOX2 (SOX group B),Eukaryotic type,beta-Scaffold factors with minor groove contacts,HMG SOX
+60,Dapma7bEVm016453,K09267,SOX1S; transcription factor SOX1/3/14/21 (SOX group B),Eukaryotic type,beta-Scaffold factors with minor groove contacts,HMG SOX
+61,Dapma7bEVm016442,K09407,FOXN; forkhead box protein N,Eukaryotic type,Helix-turn-helix,Fork head/winged helix developmental regulators
+62,Dapma7bEVm028187,K09070,"TCF15, PARAXIS; transcription factor 15",Eukaryotic type,Basic helix-loop-helix (bHLH),"Tal/Twist/Atonal/Hen, Mesodermal Twist-like factors"
+63,Dapma7bEVm007694,K09070,"TCF15, PARAXIS; transcription factor 15",Eukaryotic type,Basic helix-loop-helix (bHLH),"Tal/Twist/Atonal/Hen, Mesodermal Twist-like factors"
+64,Dapma7bEVm003611,K09228,KRAB; KRAB domain-containing zinc finger protein,Eukaryotic type,Zinc finger,Cys2His2 others
+65,Dapma7bEVm005590,K09228,KRAB; KRAB domain-containing zinc finger protein,Eukaryotic type,Zinc finger,Cys2His2 others
+66,Dapma7bEVm029423,K09228,KRAB; KRAB domain-containing zinc finger protein,Eukaryotic type,Zinc finger,Cys2His2 others
+67,Dapma7bEVm003402,K09427,ADF1; Adh transcription factor 1,Eukaryotic type,Helix-turn-helix,"Tryptophan clusters Myb, Myb-like factors"
+68,Dapma7bEVm004795,K05870,CREB1; cyclic AMP-responsive element-binding protein 1,Eukaryotic type,Basic leucine zipper (bZIP),CREB
+69,Dapma7bEVm003149,K07466,"RFA1, RPA1, rpa; replication factor A1",Eukaryotic type,Zinc finger,Cys2His2 others
+70,Dapma7bEVm011996,K08066,"NFYC, HAP5; nuclear transcription factor Y, gamma",Eukaryotic type,beta-Scaffold factors with minor groove contacts,Heteromeric CCAAT factors
+71,Dapma7bEVm005001,K00558,"DNMT1, dcm; DNA (cytosine-5)-methyltransferase 1 [EC:2.1.1.37]",Eukaryotic type,Zinc finger,CXXC CpG-binding proteins
+72,Dapma7bEVm006334,K21626,"CCNDBP1, DIP1, GCIP; cyclin-D1-binding protein 1",Eukaryotic type,Basic helix-loop-helix (bHLH),HLH domain only
+73,Dapma7bEVm003265,K15607,"TLX3, HOX11L2; T-cell leukemia homeobox protein 3",Eukaryotic type,Helix-turn-helix,Homeo domain ANTP: NKL
+74,Dapma7bEVm028621,K09366,"POU4F, BRN3; POU domain transcription factor, class 4",Eukaryotic type,Helix-turn-helix,Homeo domain POU
+75,Dapma7bEVm011368,K09366,"POU4F, BRN3; POU domain transcription factor, class 4",Eukaryotic type,Helix-turn-helix,Homeo domain POU
+76,Dapma7bEVm006536,K09201,YY; transcription factor YY,Eukaryotic type,Zinc finger,Cys2His2 others
+77,Dapma7bEVm004860,K08064,"NFYA, HAP2; nuclear transcription factor Y, alpha",Eukaryotic type,beta-Scaffold factors with minor groove contacts,Heteromeric CCAAT factors
+78,Dapma7bEVm007657,K09339,HLX1; homeobox protein HLX1,Eukaryotic type,Helix-turn-helix,Homeo domain ANTP: NKL
+79,Dapma7bEVm000115,K09276,"YBX1, NSEP1; Y-box-binding protein 1",Eukaryotic type,beta-Scaffold factors with minor groove contacts,"Cold-shock domain factors, YB-1/DbpB-like"
+80,Dapma7bEVm002681,K08704,"NR2A4, Hnf4; hepatocyte nuclear factor 4",Eukaryotic type,Zinc finger,Cys4 hepatocyte nuclear factor 4-like
+81,Dapma7bEVm005754,K04453,MAX; Max protein,Eukaryotic type,Basic helix-loop-helix/leucine zipper (bHLH-ZIP),"Cell cycle controlling factors, Mad/Max"
+82,Dapma7bEVm010137,K14032,"NR2F3, svp; nuclear receptor subfamily 2 group F member 3",Eukaryotic type,Zinc finger,Cys4 hepatocyte nuclear factor 4-like
+83,Dapma7bEVm008366,K24369,ZC4H2; zinc finger C4H2 domain-contaning protein,Eukaryotic type,Zinc finger,Other zinc fingers
+84,Dapma7bEVm017843,K05706,"SNAI2, SLUG; snail 2",Eukaryotic type,Zinc finger,Cys2His2 Snail
+85,Dapma7bEVm008345,K05706,"SNAI2, SLUG; snail 2",Eukaryotic type,Zinc finger,Cys2His2 Snail
+86,Dapma7bEVm011736,K09225,ZIC4; zinc finger protein ZIC 4,Eukaryotic type,Zinc finger,Cys2His2 GLI-like
+87,Dapma7bEVm004769,K09377,CSRP; cysteine and glycine-rich protein,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+88,Dapma7bEVm015175,K09377,CSRP; cysteine and glycine-rich protein,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+89,Dapma7bEVm015077,K06053,"RBPSUH, RBPJK; recombining binding protein suppressor of hairless",Eukaryotic type,Other transcription factors,Others
+90,Dapma7bEVm003856,K03120,"TBP, tbp; transcription initiation factor TFIID TATA-box-binding protein",Eukaryotic type,beta-Scaffold factors with minor groove contacts,TATA-binding proteins
+91,Dapma7bEVm004355,K03120,"TBP, tbp; transcription initiation factor TFIID TATA-box-binding protein",Eukaryotic type,beta-Scaffold factors with minor groove contacts,TATA-binding proteins
+92,Dapma7bEVm010947,K09031,"FOSLN; fos-like antigen, invertebrate",Eukaryotic type,Basic leucine zipper (bZIP),"AP-1(-like) components, Fos"
+93,Dapma7bEVm006650,K08065,"NFYB, HAP3; nuclear transcription Y subunit beta",Eukaryotic type,beta-Scaffold factors with minor groove contacts,Heteromeric CCAAT factors
+94,Dapma7bEVm010943,K09319,EN; homeobox protein engrailed,Eukaryotic type,Helix-turn-helix,Homeo domain ANTP: NKL
+95,Dapma7bEVm015385,K09191,GTF3A; general transcription factor IIIA,Eukaryotic type,Zinc finger,Cys2His2 others
+96,Dapma7bEVm010536,K09073,PTF1A; pancreas-specific transcription factor 1a,Eukaryotic type,Basic helix-loop-helix (bHLH),"Tal/Twist/Atonal/Hen, Mesodermal Twist-like factors"
+97,Dapma7bEVm028317,K09313,CUTL; homeobox protein cut-like,Eukaryotic type,Helix-turn-helix,Homeo domain CUT
+98,Dapma7bEVm011005,K08546,"NR2E3, PNR; nuclear receptor subfamily 2 group E member 3",Eukaryotic type,Zinc finger,Cys4 hepatocyte nuclear factor 4-like
+99,Dapma7bEVm003183,K09370,ISL1; insulin gene enhancer protein ISL-1,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+100,Dapma7bEVm005219,K08539,"VDR, NR1I1; vitamin D3 receptor",Eukaryotic type,Zinc finger,Cys4 thyroid hormone receptor-like
+101,Dapma7bEVm006774,K08539,"VDR, NR1I1; vitamin D3 receptor",Eukaryotic type,Zinc finger,Cys4 thyroid hormone receptor-like
+102,Dapma7bEVm001387,K09275,TFCP2; transcription factor CP2 and related proteins,Eukaryotic type,beta-Scaffold factors with minor groove contacts,Grainyhead
+103,Dapma7bEVm010151,K17845,KLF2; krueppel-like factor 2,Eukaryotic type,Zinc finger,Cys2His2 SP/KLF family and related proteins
+104,Dapma7bEVm005033,K15690,RC3H; RING finger and CCCH-type zinc finger domain-containing protein,Eukaryotic type,Zinc finger,Cys3His zinc factors
+105,Dapma7bEVm004250,K09219,SCRT; scratch,Eukaryotic type,Zinc finger,Cys2His2 Snail
+106,Dapma7bEVm011891,K09219,SCRT; scratch,Eukaryotic type,Zinc finger,Cys2His2 Snail
+107,Dapma7bEVm005247,K15605,KLF3; krueppel-like factor 3,Eukaryotic type,Zinc finger,Cys2His2 SP/KLF family and related proteins
+108,Dapma7bEVm004289,K25794,HINFP; histone H4 transcription factor,Eukaryotic type,Zinc finger,Cys2His2 others
+109,Dapma7bEVm001774,K09272,"SSRP1, POB3; FACT complex subunit SSRP1/POB3",Eukaryotic type,beta-Scaffold factors with minor groove contacts,HMG2-related
+110,Dapma7bEVm006224,K14960,"CXXC1, SPP1, CPS40; COMPASS component SPP1",Eukaryotic type,Zinc finger,CXXC CpG-binding proteins
+111,Dapma7bEVm000384,K09273,UBTF; upstream-binding transcription factor,Eukaryotic type,beta-Scaffold factors with minor groove contacts,UBF
+112,Dapma7bEVm004485,K22758,CHCHD2; coiled-coil-helix-coiled-coil-helix domain-containing protein 2,Eukaryotic type,Other transcription factors,Others
+113,Dapma7bEVm006605,K04448,JUN; transcription factor AP-1,Eukaryotic type,Basic leucine zipper (bZIP),"AP-1(-like) components, Jun"
+114,Dapma7bEVm007981,K04683,TFDP1; transcription factor Dp-1,Eukaryotic type,Helix-turn-helix,"Fork head/winged helix cell cycle-controlling factors, DP"
+115,Dapma7bEVm001457,K08703,"NR3BN, ERR; estrogen-related receptor ERR",Eukaryotic type,Zinc finger,Cys4 estrogen receptor-like
+116,Dapma7bEVm000825,K11660,MTA; metastasis-associated protein MTA,Eukaryotic type,Zinc finger,Cys4 GATA-factors
+117,Dapma7bEVm023382,K09214,GL; glass,Eukaryotic type,Zinc finger,Cys2His2 others
+118,Dapma7bEVm015895,K09214,GL; glass,Eukaryotic type,Zinc finger,Cys2His2 others
+119,Dapma7bEVm019222,K09332,"RAX, RX; retina and anterior neural fold homeobox protein",Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+120,Dapma7bEVm023717,K07295,"NR2AN, dsf; nuclear receptor subfamily 2 group A",Eukaryotic type,Zinc finger,Cys4 hepatocyte nuclear factor 4-like
+121,Dapma7bEVm024674,K24874,BSX; brain-specific homeobox protein,Eukaryotic type,Helix-turn-helix,Homeo domain ANTP: NKL
+122,Dapma7bEVm012565,K09324,GSC; homeobox protein goosecoid,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+123,Dapma7bEVm012720,K09371,LMX1; LIM homeobox transcription factor 1,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+124,Dapma7bEVm027247,K09180,"TFAP2N; transcription factor AP-2, invertebrate",Eukaryotic type,Other basic domains,AP-2 (bHSH)
+125,Dapma7bEVm023914,K09180,"TFAP2N; transcription factor AP-2, invertebrate",Eukaryotic type,Other basic domains,AP-2 (bHSH)
+126,Dapma7bEVm029518,K09180,"TFAP2N; transcription factor AP-2, invertebrate",Eukaryotic type,Other basic domains,AP-2 (bHSH)
+127,Dapma7bEVm005516,K09404,FOXK; forkhead box protein K,Eukaryotic type,Helix-turn-helix,Fork head/winged helix other regulators
+128,Dapma7bEVm022793,K09404,FOXK; forkhead box protein K,Eukaryotic type,Helix-turn-helix,Fork head/winged helix other regulators
+129,Dapma7bEVm015583,K24895,"DRGX, PRRXL1; dorsal root ganglia homeobox protein",Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+130,Dapma7bEVm000992,K04682,E2F4_5; transcription factor E2F4/5,Eukaryotic type,Helix-turn-helix,"Fork head/winged helix cell cycle-controlling factors, E2F"
+131,Dapma7bEVm015344,K09373,LHX2_9; LIM homeobox protein 2/9,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+132,Dapma7bEVm028973,K09373,LHX2_9; LIM homeobox protein 2/9,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+133,Dapma7bEVm003227,K09441,"GABPA; GA-binding protein transcription factor, alpha",Eukaryotic type,Helix-turn-helix,Tryptophan clusters Ets-type
+134,Dapma7bEVm028622,K09375,LHX6_8; LIM homeobox protein 6/8,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+135,Dapma7bEVm011373,K09375,LHX6_8; LIM homeobox protein 6/8,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+136,Dapma7bEVm010079,K15263,LYER; cell growth-regulating nucleolar protein,Eukaryotic type,Zinc finger,Cys2HisCys zinc factors
+137,Dapma7bEVm007023,K09389,E2F2; transcription factor E2F2,Eukaryotic type,Helix-turn-helix,"Fork head/winged helix cell cycle-controlling factors, E2F"
+138,Dapma7bEVm003797,K09256,NFKBIL1; NF-kappa-B inhibitor-like protein 1,Eukaryotic type,beta-Scaffold factors with minor groove contacts,RHR (Rel homology region) Ankyrin only
+139,Dapma7bEVm005821,K09200,"SP-N; transcription factor Sp, invertebrate",Eukaryotic type,Zinc finger,Cys2His2 SP/KLF family and related proteins
+140,Dapma7bEVm010567,K09257,NFKBIL2; NF-kappa-B inhibitor-like protein 2,Eukaryotic type,beta-Scaffold factors with minor groove contacts,RHR (Rel homology region) Ankyrin only
+141,Dapma7bEVm010294,K21772,PURA; transcriptional activator protein Pur-alpha,Eukaryotic type,Other transcription factors,Others
+142,Dapma7bEVm003744,K11308,"MYST1, MOF, KAT8; histone acetyltransferase MYST1 [EC:2.3.1.48]",Eukaryotic type,Zinc finger,Cys2HisCys zinc factors
+143,Dapma7bEVm002346,K09103,"EBF, COE; early B-cell factor",Eukaryotic type,Basic helix-loop-helix (bHLH),HLH domain only
+144,Dapma7bEVm019433,K09081,NEUROG1; neurogenin 1,Eukaryotic type,Basic helix-loop-helix (bHLH),"Tal/Twist/Atonal/Hen, Atonal"
+145,Dapma7bEVm005150,K09372,LHX1; LIM homeobox protein 1,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+146,Dapma7bEVm009543,K08268,HIF1A; hypoxia-inducible factor 1 alpha,Eukaryotic type,Basic helix-loop-helix (bHLH),Factors with PAS domain
+147,Dapma7bEVm023007,K08268,HIF1A; hypoxia-inducible factor 1 alpha,Eukaryotic type,Basic helix-loop-helix (bHLH),Factors with PAS domain
+148,Dapma7bEVm011984,K09037,MAFF_G_K; transcription factor MAFF/G/K,Eukaryotic type,Basic leucine zipper (bZIP),"AP-1(-like) components, Maf"
+149,Dapma7bEVm009777,K09260,MEF2A; MADS-box transcription enhancer factor 2A,Eukaryotic type,beta-Scaffold factors with minor groove contacts,"MADS-box regulators of differentiation, MEF-2"
+150,Dapma7bEVm003306,K04734,NFKBIA; NF-kappa-B inhibitor alpha,Eukaryotic type,beta-Scaffold factors with minor groove contacts,RHR (Rel homology region) Ankyrin only
+151,Dapma7bEVm022727,K10185,TBX20; T-box protein 20,Eukaryotic type,Other transcription factors,T-box
+152,Dapma7bEVm004188,K14035,NR1IN; nuclear receptor subfamily 1 group I,Eukaryotic type,Zinc finger,Cys4 thyroid hormone receptor-like
+153,Dapma7bEVm006608,K18486,HAND2; heart-and neural crest derivatives-expressed protein 2,Eukaryotic type,Basic helix-loop-helix (bHLH),"Tal/Twist/Atonal/Hen, Mesodermal Twist-like factors"
+154,Dapma7bEVm005207,K26434,LRRFIP; leucine-rich repeat flightless-interacting protein,Eukaryotic type,Other transcription factors,LRRFIP
+155,Dapma7bEVm011235,K08545,"NR2E1, TLX, tll; nuclear receptor subfamily 2 group E member 1",Eukaryotic type,Zinc finger,Cys4 hepatocyte nuclear factor 4-like
+156,Dapma7bEVm010232,K09097,ARNT; aryl hydrocarbon receptor nuclear translocator,Eukaryotic type,Basic helix-loop-helix (bHLH),Factors with PAS domain
+157,Dapma7bEVm000842,K09098,NPAS1_3; neuronal PAS domain-containing protein 1/3,Eukaryotic type,Basic helix-loop-helix (bHLH),Factors with PAS domain
+158,Dapma7bEVm003993,K24768,MYRF; myelin regulatory factor [EC:3.4.-.-],Eukaryotic type,beta-Scaffold factors with minor groove contacts,MYRF
+159,Dapma7bEVm004398,K09106,USF; upstream stimulatory factor,Eukaryotic type,Basic helix-loop-helix/leucine zipper (bHLH-ZIP),Ubiquitous bHLH-ZIP factors
+160,Dapma7bEVm006171,K22870,ZNF423; zinc finger protein 423,Eukaryotic type,Zinc finger,Cys2His2 others
+161,Dapma7bEVm003597,K11307,"MYST2, HBO1, KAT7; histone acetyltransferase MYST2 [EC:2.3.1.48]",Eukaryotic type,Zinc finger,Cys2HisCys zinc factors
+162,Dapma7bEVm012612,K09374,LHX3_4; LIM homeobox protein 3/4,Eukaryotic type,Helix-turn-helix,Homeo domain LIM
+163,Dapma7bEVm004193,K11304,"TIP60, KAT5, ESA1; histone acetyltransferase HTATIP [EC:2.3.1.48]",Eukaryotic type,Zinc finger,Cys2HisCys zinc factors
+164,Dapma7bEVm027681,K15614,SIX1; homeobox protein SIX1,Eukaryotic type,Helix-turn-helix,Homeo domain SINE
+165,Dapma7bEVm018385,K15614,SIX1; homeobox protein SIX1,Eukaryotic type,Helix-turn-helix,Homeo domain SINE
+166,Dapma7bEVm004621,K11485,"MTF2, PCL2; metal regulatory transcription factor 2",Eukaryotic type,Zinc finger,Other zinc fingers
+167,Dapma7bEVm007829,K23407,GATAD1; GATA zinc finger domain-containing protein 1,Eukaryotic type,Zinc finger,Cys4 GATA-factors
+168,Dapma7bEVm005019,K24387,L3MBTL; lethal(3)malignant brain tumor-like protein,Eukaryotic type,Zinc finger,Cys2HisCys zinc factors
+169,Dapma7bEVm028036,K10779,ATRX; transcriptional regulator ATRX,Eukaryotic type,Zinc finger,Cys4 GATA-factors
+170,Dapma7bEVm001953,K08362,"THRB, NR1A2; thyroid hormone receptor beta",Eukaryotic type,Zinc finger,Cys4 thyroid hormone receptor-like
+171,Dapma7bEVm005682,K09307,HOX_7; homeobox protein HoxA/B7,Eukaryotic type,Helix-turn-helix,Homeo domain ANTP: HOXL
+172,Dapma7bEVm027416,K02296,"ARNTL, BMAL1, CYC; aryl hydrocarbon receptor nuclear translocator-like protein 1",Eukaryotic type,Basic helix-loop-helix (bHLH),Factors with PAS domain
+173,Dapma7bEVm005314,K09208,"KLF9S, BTEB; krueppel-like factor 9/13/14/16",Eukaryotic type,Zinc finger,Cys2His2 SP/KLF family and related proteins
+174,Dapma7bEVm018658,K09100,SIM; single-minded,Eukaryotic type,Basic helix-loop-helix (bHLH),Factors with PAS domain
+175,Dapma7bEVm006175,K04681,RBL1; retinoblastoma-like protein 1,Eukaryotic type,Other transcription factors,Pocket domain Rb
+176,Dapma7bEVm003620,K09199,SP9; transcription factor Sp9,Eukaryotic type,Zinc finger,Cys2His2 SP/KLF family and related proteins
+177,Dapma7bEVm007074,K09114,"MXD, MAD; MAX dimerization protein",Eukaryotic type,Basic helix-loop-helix/leucine zipper (bHLH-ZIP),"Cell cycle controlling factors, Mad/Max"
+178,Dapma7bEVm001632,K09113,MLX; MAX-like protein X,Eukaryotic type,Basic helix-loop-helix/leucine zipper (bHLH-ZIP),"Cell cycle controlling factors, Mad/Max"
+179,Dapma7bEVm000811,K07197,"SREBP1, SREBF1; sterol regulatory element-binding transcription factor 1",Eukaryotic type,Basic helix-loop-helix/leucine zipper (bHLH-ZIP),Ubiquitous bHLH-ZIP factors
+180,Dapma7bEVm001790,K15608,PAX2; paired box protein 2,Eukaryotic type,Helix-turn-helix,Homeo domain Paired-related
+181,Dapma7bEVm024592,K24645,PRDM13; PR domain zinc finger protein 13 [EC:2.1.1.-],Eukaryotic type,Zinc finger,Cys2His2 PRDM
+182,Dapma7bEVm012145,K09436,FLI1; friend leukemia integration 1 transcription factor,Eukaryotic type,Helix-turn-helix,Tryptophan clusters Ets-type
+183,Dapma7bEVm011900,K17398,DNMT3A; DNA (cytosine-5)-methyltransferase 3A [EC:2.1.1.37],Eukaryotic type,Zinc finger,Cys4 GATA-factors
+184,Dapma7bEVm030706,K25793,"NUPR2, NUPR1L; nuclear protein 2",Eukaryotic type,Other transcription factors,NUPR
