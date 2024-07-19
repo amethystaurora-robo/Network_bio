@@ -13,6 +13,8 @@ The final dataframe is written to a csv for 3 conditions
 
 """
 
+library(dplyr)
+
 control_weights <- read.csv('link_list_control.csv')
 low_weights <- read.csv('link_list_low.csv')
 high_weights <- read.csv('link_list_high.csv')
@@ -26,17 +28,25 @@ get_top_alphas <- function(weights,alphas) {
   
   #merge alphas with gene order
   alphas_genes <- cbind(alphas,gene_order)
+  print(head(alphas_genes,5))
   
   #order by alphas, select top alphas
   control_ordered <- alphas_genes[order(alphas_genes$alpha, decreasing = TRUE),]
-  top_5000_alphas <- control_ordered[control_ordered$alpha > 0.08,]
+  # Calculate the median of the alpha column
+  median_alpha <- median(control_ordered$alpha, na.rm = TRUE)
+  
+  # Select rows where alpha is above the median value
+  top_5000_alphas <- control_ordered[control_ordered$alpha > median_alpha, ]
+  print(head(top_5000_alphas,5))
+  print(dim(top_5000_alphas))
   
   # Rename the column "Gene" to "regulatory.gene"
   colnames(top_5000_alphas)[colnames(top_5000_alphas) == "Genes"] <- "target.gene"
   
+  #filter out zero weights to reduce processing time
+  filtered_weights <- weights %>% filter(weight != 0)
   #merge alphas with main file
-  
-  weights_alphas <- merge(top_5000_alphas, weights, by = "target.gene")
+  weights_alphas <- merge(top_5000_alphas, filtered_weights, by = "target.gene")
   
   # Calculate node out degrees, sum weight for each transcription factor
   regulatory_sum <- aggregate(weight ~ regulatory.gene, data = weights_alphas, sum)
@@ -63,6 +73,9 @@ alphas_weights_high <- get_top_alphas(high_weights, high_alphas)
 write.csv(alphas_weights_control,'control_subset.csv')
 write.csv(alphas_weights_low,'low_subset.csv')
 write.csv(alphas_weights_high,'high_subset.csv')
+
+
+
 
 
 
