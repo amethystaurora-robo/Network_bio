@@ -31,7 +31,7 @@ run_dyngenie = function(df) {
   TS.data <- list(df[2:nrow(df),])
 
   #run DynGENIE3
-  res <- dynGENIE3(TS.data,time.points,regulators=c(tf_terms$regulatory))
+  res <- dynGENIE3(TS.data,time.points,regulators=c(tf_terms$regulatory),tree.method="ET",ntrees=50,K=5)
 
   #get weighted adjacency matrix
   link.list <- get.link.list(res$weight.matrix)
