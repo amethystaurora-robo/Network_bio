@@ -88,5 +88,4 @@ results <- results[-1, ]
 
 # Find the best parameters based on F1-score
 best_params <- results[which.max(results$f1_score), ]
-write.csv(best_params,'best_params.csv')
-head(best_params)
+write.csv(results,'results.csv')
