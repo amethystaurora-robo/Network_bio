@@ -10,4 +10,5 @@ Pre-processing_visualization.ipynb -> GRN_pre-processing.ipynb -> dyngenie_trial
 
 Parameter tuning can be run on DynGENIE3 at any point after Pre-processing_visualization.ipynb. The parameter tuning file is parameter_tuning.R.
 
-To annotate files and ensure robustness of DynGENIE3 analysis, Limma and GSEA are run. Limma is run using Galaxy software. GSEA is run using the online Gestalt tool. The files which pre-process the data for these tools are limma_pre-processing.ipynb and gestalt_pre-processing.ipynb. gsea_processing.ipynb is used to clean and concat the dataframes resulting from Gestalt analysis. This cleaned dataframe can be visualized using Tableau.
+DeSeq2 is run using raw transcriptomic data and files output from DeSeq2 and DynGENIE3 are processed for Gestalt.
+rna_preproc.r -> rna_deseq.r -> gestalt_pre-processing.ipynb -> GESTALT using online software -> gsea_processing.ipynb
