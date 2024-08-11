@@ -20,11 +20,18 @@ datExpr <- datExpr[-1, ]            # Remove the first row
 datExpr <- datExpr[, -1]             # Remove the first column (KEGG IDs with NANs)
 head(datExpr)
 rownames(datExpr) <- datExpr[, 1]   # Set the second column as row names
+print(rownames(datExpr))
 datExpr <- as.data.frame(t(datExpr))
+head(datExpr,2)
+datExpr <- datExpr [,-1]
+head(datExpr,2)
+length(datExpr)
 
 #convert to matrix
 datExpr <- as.matrix(datExpr)
 head(datExpr)
+print(rownames(datExpr))
+length(datExpr)
 
 #Pick soft threshold
 power = pickSoftThreshold(datExpr, powerVector = seq(1, 20, by = 1), verbose = 5)
@@ -57,6 +64,7 @@ chosen_power <- 8
 adjacency = adjacency(datExpr, power = chosen_power)
 
 # Create the topological overlap matrix (TOM)
+datExpr <- datExpr[,-1]
 TOM = TOMsimilarity(adjacency)
 
 #get DEGs list from DynGENIE
@@ -104,28 +112,52 @@ plotDendroAndColors(geneTree_degs, moduleColorAssignments, "Module colors", dend
 print(unique(moduleColorAssignments))
 
 # 2. Create a data frame with gene names and their corresponding module colors
-results_df = data.frame(Gene = geneNames, ModuleColor = dynamicMods_degs)
-str(datExpr)
-datExpr_cleaned <- subset(datExpr, select = -c(1, 2))  # Remove the first two columns for eigengenes
-str(datExpr_cleaned)
-length(datExpr_cleaned)
-head(datExpr_cleaned)
+geneNames = colnames(datExpr)
+print(ncol(datExpr))
+results_df = data.frame(Gene = geneNames, ModuleColor = moduleColorAssignments)
+
 # Assuming datExpr is your expression data and moduleColors are the colors assigned to each gene
-MEs <- moduleEigengenes(datExpr_cleaned, colors = moduleColors)$eigengenes
+datExpr <- datExpr[-1,]
+datExpr <- apply(datExpr, 2, function(x) as.numeric(as.character(x)))
+datExpr <- as.data.frame(datExpr)
+MEs <- moduleEigengenes(datExpr, colors = moduleColorAssignments)$eigengenes
+
+# Define the color names
+color_names <- c("Red", "Slate Blue", "Sea Green", "Grey-Green", "Pinkish Red",
+                 "Dark Orange", "Bright Yellow", "Brown", "Salmon Pink", "Light Purple",
+                 "Soft Green", "Turquoise", "Light Peach", "Lavender", "Light Purple",
+                 "Beige", "Lime Green", "Bright Yellow", "Tan", "Light Grey",
+                 "Blue Green", "Soft Green", "Light Yellow", "Lavender", "Salmon", 
+                 "Dusty Purple")
+
+# Define the hex colors
+hex_colors <- c("#E41A1C", "#556C9C", "#459D70", "#708173", "#B65C73",
+                "#FF8E06", "#FFF730", "#BA7D2A", "#D56F80", "#D08AAF",
+                "#8CA29B", "#6EBEA1", "#EA9369", "#AD9AAC", "#BC94C6",
+                "#D0A59B", "#B5D84D", "#FFD92F", "#E9C782", "#C4B8A8",
+                "#A1C2BC", "#AEDFC1", "#F7F6B7", "#C1BED7", "#EC8D8A",
+                "#B29CAB")
+
+# Create a named vector
+color_map <- setNames(color_names, hex_colors)
 
 # View the module eigengenes
 head(MEs)
+rownames(MEs) <- rownames(datExpr)
+rownames(datExpr)
 
-# Create a data frame mapping
-moduleColorMapping <- data.frame(Module = uniqueModules, Color = colorPalette[uniqueModules + 1])  # +1 for 1-based indexing in R
-str(datExpr)
-# Check and Export the results to a CSV file
-head(moduleColorMapping,50)
-head(results_df,50)
+#plot heatmap of Eigengenes
+heatmap(as.matrix(MEs), 
+        Rowv = NA, 
+        Colv = NA, 
+        scale = "row", 
+        col = colorRampPalette(c("blue", "white", "red"))(50), 
+        margins = c(5, 10),
+        xlab = "", 
+        ylab = "Module Eigengenes",
+        labRow = rownames(MEs),
+        labCol = color_map[unique(moduleColors)])
 
-final_df <- merge(results_df, moduleColorMapping, by.x = "ModuleColor", by.y = "Module", all.x = TRUE)
-colnames(final_df)[colnames(final_df) == "Color"] <- "ModuleColorName"
-head(final_df)
-write.csv(final_df, file = "gene_module_colors.csv", row.names = FALSE)
-final_df <- read.csv('gene_module_colors.csv')
-print(length(final_df))
+
+write.csv(results_df,'gene_module_colors.csv',row.names=FALSE)
+
