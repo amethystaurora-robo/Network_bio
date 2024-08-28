@@ -111,12 +111,12 @@ plotDendroAndColors(geneTree_degs, moduleColorAssignments, "Module colors", dend
 #Print out the unique module colors and corresponding modules
 print(unique(moduleColorAssignments))
 
-# 2. Create a data frame with gene names and their corresponding module colors
+#Create a data frame with gene names and their corresponding module colors
 geneNames = colnames(datExpr)
 print(ncol(datExpr))
 results_df = data.frame(Gene = geneNames, ModuleColor = moduleColorAssignments)
 
-# Assuming datExpr is your expression data and moduleColors are the colors assigned to each gene
+#make module eigengenes numeric and assign colors
 datExpr <- datExpr[-1,]
 datExpr <- apply(datExpr, 2, function(x) as.numeric(as.character(x)))
 datExpr <- as.data.frame(datExpr)
