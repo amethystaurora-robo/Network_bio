@@ -1,7 +1,8 @@
 """
 This file runs DeSeq2 using Log2 fold change shrinkage.
 It takes the metadata and raw data from rna_preproc.r.
-This file will return a list of DEGs and their metrics.
+This file will find pairwise comparisons of DEGs and return those lists.
+It will also find DEGs differentially expressed over all time and return one file.
 It also generates PCA plots.
 
 """
@@ -13,6 +14,9 @@ rm(list = ls())
 library(DESeq2)
 library(ashr)
 library(RColorBrewer)
+library(DEGreport)
+library(dplyr)
+library(tibble)
 
 
 # Loading the Sample Sheet and Read Counts
@@ -50,7 +54,7 @@ sub_read_counts <- read_counts[,sub_ids]
 
 sub_sample_sheet  <- droplevels(sub_sample_sheet)
 sub_sample_sheet$time_point <- factor(sub_sample_sheet$time_point, 
-                                  levels = c('1H', '2H', '6H', '12H', '24H', '4D', '5D', '6D', '7D'))
+                                      levels = c('1H', '2H', '6H', '12H', '24H', '4D', '5D', '6D', '7D'))
 
 sub_sample_sheet$time_point <- relevel(sub_sample_sheet$time_point, ref = '1H')
 
@@ -72,16 +76,35 @@ for (tp in levels(sub_sample_sheet$time_point)){
 
 
 
-
-dds <- DESeqDataSetFromMatrix(
-    raw_counts, colData = sample_sheet,
-    # design = ~ treatment * timepoint
-    design = ~ time_point + treatment + time_point:treatment
+#run DeSeq2 on all timepoints at once
+dds_full <- DESeqDataSetFromMatrix(
+  read_counts, colData = sample_sheet,
+  design = ~ time_point + treatment + time_point:treatment
 )
+
+dds_deseq_full <- DESeq(dds_full)
+
+#get DEGs overall timepoints
+res_LRT <- results(dds_deseq_full)
+head(res_LRT)
+
+# Subset the LRT results to return genes with padj < 0.05
+sig_res_LRT <- res_LRT %>%
+  data.frame() %>%
+  rownames_to_column(var="gene") %>% 
+  as_tibble() %>% 
+  filter(padj < 0.05)
+
+# Get sig gene lists
+sigLRT_genes <- sig_res_LRT %>% 
+  pull(gene)
+
+length(sigLRT_genes)
+write.csv(sigLRT_genes,file="full_genes_overall.csv")
 
 # Reorder time_point levels
 sample_sheet$time_point <- factor(sub_sample_sheet$time_point, 
-                                      levels = c('1H', '2H', '6H', '12H', '24H', '4D', '5D', '6D', '7D'))
+                                  levels = c('1H', '2H', '6H', '12H', '24H', '4D', '5D', '6D', '7D'))
 
 # Check the new levels
 levels(sample_sheet$time_point)
@@ -108,18 +131,18 @@ for (tp in c('1H','2H','6H','12H','24H','4D','5D','6D','7D')){
       res.contrast <- list(c(paste0('treatment_',tr,'_vs_control'), paste0('time_point',tp,'.treatment',tr)))
       res <- results(ddsLRT, contrast=res.contrast, test='Wald')
     }
-      
+    
     # number of DEGs (adjusted p-values < 0.05)
     cat(paste0(res.name, ' significant p-values = ', sum(res$pvalue < 0.05, na.rm = T), '\n'))
     cat(paste0(res.name, ' significant p-adjust = ', sum(res$padj < 0.05, na.rm = T), '\n'))
-
+    
     # lfcs
     if (tp == '1H'){
       lfc_res <- lfcShrink(dds = ddsLRT, coef = res.comp, res = res)
     } else {
       lfc_res <- lfcShrink(dds = ddsLRT, contrast = res.contrast, res = res, type = 'ashr')
     }
-
+    
     # export
     write.csv(lfc_res, paste0(res.name, '_deseq_res.csv'))
     
@@ -156,15 +179,15 @@ pca.plot <- function(read.counts, classes,
   
   pca_comps <- pca$x[,comps]
   prp_comps <- round(prp[comps], 2)
-
+  
   df <- data.frame(pc1 = pca_comps[,1], pc2 = pca_comps[,2], condition = classes)
   p  <- ggplot(df, aes(x = pc1, y = pc2, color = condition)) + 
-        geom_point(size = 3) + 
-        labs(title = paste0('Principal Component Analysis - Axes ', comps[1] , ' and ', comps[2]), 
-             x = paste0('PC', comps[1], ' (', prp_comps[1], '%)'), 
-             y = paste0('PC', comps[2], ' (', prp_comps[2], '%)')) + 
-        # geom_text(label = colnames(read.counts), vjust = 0, nudge_y = 2) +
-        scale_color_manual(values = col)
+    geom_point(size = 3) + 
+    labs(title = paste0('Principal Component Analysis - Axes ', comps[1] , ' and ', comps[2]), 
+         x = paste0('PC', comps[1], ' (', prp_comps[1], '%)'), 
+         y = paste0('PC', comps[2], ' (', prp_comps[2], '%)')) + 
+    # geom_text(label = colnames(read.counts), vjust = 0, nudge_y = 2) +
+    scale_color_manual(values = col)
   return(p)
 }
 
