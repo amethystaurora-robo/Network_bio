@@ -1,7 +1,12 @@
-# Network_bio
+### 🧬 Computational Modelling Pipeline for Omics Data  
+This complete bioinformatics pipeline integrates traditional statistical analysis with cutting-edge graph machine learning to analyse transcriptomic and metabolomic samples of Daphnia magna. The organism in this pipeline has been treated with ethoprophos, an organophosphate pesticide, but the pipeline could be applied to any transcriptomic and metabolomic sample datasets. This allows for a network analysis of pathways affected under ethoprophos dosage.
+<p align="left">
+  <a href="https://public.tableau.com/app/profile/amethyst.eicher/vizzes" target="_blank">
+    <img src="https://img.shields.io/badge/See%20Vizzes-766090?style=for-the-badge&logo=tableau&logoColor=white"/>
+  </a>
+</p>
 
-This project analyzes the effect of ethoprophos on Daphnia magna gene expression levels collected at 3 different doses on 9 timepoints.
-
+### More Details Below
 Each code file contains a header which details its use.
 The DynGENIE3 file requires a wrapper doc, available from https://github.com/vahuynh/dynGENIE3
 
