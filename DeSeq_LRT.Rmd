@@ -1,0 +1,89 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+#load libraries
+library(DESeq2)
+library(ashr)
+library(RColorBrewer)
+library(DEGreport)
+library(dplyr)
+library(tibble)
+library(ggplot2)
+library(reshape2)
+```
+
+
+```{r}
+
+# Loading the Sample Sheet and Read Counts
+# ---------------------------------------------------
+# Load sample sheet
+sample_sheet_file <- 'metadata_raw_filtered.csv'
+sample_sheet <- read.table(sample_sheet_file, sep = ',', header = T, row.names = 1, stringsAsFactors = T, check.names = F, comment.char = '')
+
+head(sample_sheet)
+dim(sample_sheet)
+
+
+# Load read counts
+read_counts_file <- 'rna_raw_filtered.csv'
+read_counts <- read.table(read_counts_file, sep = ',', header = T, row.names = 1, check.names = F, comment.char = '')
+
+head(read_counts)
+dim(read_counts)
+
+#convert sheet to matrix
+read_counts <- as.matrix(read_counts)
+
+```
+
+```{r}
+# Create DESeqDataSet from matrix
+dds <- DESeqDataSetFromMatrix(countData = read_counts, 
+                              colData = sample_sheet, 
+                              design = ~ treatment + time_point + treatment:time_point)
+```
+
+```{r}
+dds
+```
+```{r}
+#estimate size factors and dispersion
+dds <- DESeq(dds)
+```
+
+```{r}
+# Full model: includes dose, time, and dose:time interaction
+full_model <- ~ treatment + time_point + treatment:time_point
+
+# Reduced model: excludes the interaction term (dose:time)
+reduced_model <- ~ treatment + time_point
+
+# Run the LRT
+dds_lrt <- DESeq(dds, test = "LRT", reduced = reduced_model)
+```
+```{r}
+lrt_results <- results(dds_lrt)
+summary(lrt_results)
+```
+```{r}
+
+```
+
+
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file). 
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
