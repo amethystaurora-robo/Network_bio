@@ -22,3 +22,5 @@ Parameter tuning can be run on DynGENIE3 at any point after Pre-processing_visua
 DeSeq2 is run using raw transcriptomic data and files output from DeSeq2 in the following order:
 rna_preproc.r -> rna_deseq.r -> gestalt_pre-processing.ipynb -> GESTALT using online software -> gsea_processing.ipynb 
 The csv output is visualized using Tableau to see pathways significantly enriched over time and compare DEGs between DynGENIE3 and DeSeq2. 
+
+A little note: This was my original draft included for my MSc thesis. Now that I am working on publication, I am re-running the entire analysis and have created a new repository to store the new results :)
